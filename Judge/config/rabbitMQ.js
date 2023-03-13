@@ -37,8 +37,7 @@ amqp.connect("amqp://localhost", async (error1, connection) => {
         {
             extension='c';
         }
-        else if(message.language!='C++')
-        {
+        else if(message.language!='C++'){
             extension='Invalid'
             setInRedis(fileID, '400:Invalid Language');
             console.log('Wrong Language');
