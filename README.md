@@ -1,4 +1,4 @@
-# Online Judge(or OJ as I like to call it)
+# Online Judge(OJ)
 
 This API Runs Code submissions in a secure environment and Passes Verdicts based
  on pre-saved testcases. It uses RabbitMQ for Queueing the submissions, Redis for Caching the results and Docker for Sandboxing. It is a Remote Code Execution Engine, linked to an online judge. It suppports the following Languages:
