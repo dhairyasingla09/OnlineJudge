@@ -58,12 +58,12 @@ amqp.connect("amqp://localhost", async (error1, connection) => {
             var cmd='';
             if(count == 0)
             {
-              cmd='echo 51101 | sudo -S docker run -v /home/vivek/PersonalSet/OJBh/Judge/folderrun/:/home/folderrun/ -dt --memory="512m" --cpus="1" ubuntu-comp'
+              cmd='echo 51101 | sudo -S docker run -v /home/dhairya/PersonalSet/OJ/Judge/folderrun/:/home/folderrun/ -dt --memory="512m" --cpus="1" ubuntu-comp'
               ++count;
             }
             else 
             {
-              cmd='sudo docker run -v /home/vivek/PersonalSet/OJBh/Judge/folderrun/:/home/folderrun/ -dt --memory="512m" --cpus="1" ubuntu-comp'
+              cmd='sudo docker run -v /home/dhairya/PersonalSet/OJ/Judge/folderrun/:/home/folderrun/ -dt --memory="512m" --cpus="1" ubuntu-comp'
             }
             exec(cmd, (err, stdout, stderr) => {
                 if (err) {
